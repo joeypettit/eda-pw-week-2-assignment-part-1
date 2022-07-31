@@ -61,9 +61,9 @@ else{
 // if the value of `pets` is greater than the value of `allowedPets`.
 if(pets < allowedPets){
     console.log("I can have more pets!");
-} if else (pets == allowedPets){
+} else if (pets === allowedPets) {
     console.log("I have enough pets");
-} else{
+} else {
     console.log("Oh no, I have too many pets!");
 }
 
@@ -95,6 +95,24 @@ if( pets > friendsPets ){
 //      Otherwise, log "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 
+
+let luckyNum = 1;
+
+switch (luckyNum) {
+    case 1:
+        console.log("First is the worst");
+        break;
+    case 2:
+        console.log("Second is the best");
+        break;
+    case 3:
+        console.log("Third is the one with the polka dot dress");
+        break;
+    default:
+        console.log("Luck is what happens when preparation meets opportunity");
+        break;
+}
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-
+adventurous === true ? console.log("Adventures are great!") : console.log("How about we stay home?");
